@@ -1,6 +1,6 @@
 {
   "name": "yeps-body",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "YEPS Parse request bodies with async / await",
   "main": "index.js",
   "scripts": {
