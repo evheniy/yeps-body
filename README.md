@@ -29,6 +29,7 @@ Parse request bodies with async / await
 
     const App = require('yeps');
     const parse = require('yeps-body');
+    const app = new App();
     
     app.then(async ctx => {
         
