@@ -15,6 +15,30 @@ describe('parse.any(req, opts)', async () => {
         app = new App();
     });
 
+    it('should test request without body', async () => {
+        let isTestFinished1 = false;
+        let isTestFinished2 = false;
+
+        app.then(async ctx => {
+            isTestFinished1 = true;
+
+            ctx.res.statusCode = 200;
+            ctx.res.end(JSON.stringify(await parse(ctx.req)));
+        });
+
+        await chai.request(http.createServer(app.resolve()))
+            .get('/')
+            .set('content-type', 'application/json')
+            .send()
+            .then(res => {
+                expect(res).to.have.status(200);
+                isTestFinished2 = true;
+            });
+
+        expect(isTestFinished1).is.true;
+        expect(isTestFinished2).is.true;
+    });
+
     it('should parse valid form body', async () => {
         let isTestFinished1 = false;
         let isTestFinished2 = false;

@@ -57,19 +57,12 @@ Parse request bodies with async / await
     parse.form(ctx.req, { queryString: { allowDots: false }})
     
 See [queryString](https://github.com/ljharb/qs) parameters.
-                
+            
+            
+#### [YEPS documentation](http://yeps.info/)
+    
 ## Links
 
-* [yeps](https://github.com/evheniy/yeps) - YEPS
-* [yeps-promisify](https://github.com/evheniy/yeps-promisify) - YEPS kernel
-* [yeps-benchmark](https://github.com/evheniy/yeps-benchmark) - performance comparison koa2, express and node http
-* [yeps-router](https://github.com/evheniy/yeps-router) - YEPS promise based router
-* [yeps-error](https://github.com/evheniy/yeps-error) - YEPS 404/500 error handler
-* [yeps-redis](https://github.com/evheniy/yeps-redis) - YEPS promise based redis client
-* [yeps-mysql](https://github.com/evheniy/yeps-mysql) - YEPS promise based mysql client
-* [yeps-boilerplate](https://github.com/evheniy/yeps-boilerplate) - YEPS app boilerplate
-* [yeps-express-wrapper](https://github.com/evheniy/yeps-express-wrapper) - YEPS express wrapper
-* [yeps-cors](https://github.com/evheniy/yeps-cors) - YEPS CORS
 * [qs](https://github.com/ljharb/qs) - A querystring parsing and stringifying library with some added security
 * [inflation](https://github.com/stream-utils/inflation) - Automatically unzip an HTTP stream
 * [raw-body](https://github.com/stream-utils/raw-body) -  Parsing request bodies
