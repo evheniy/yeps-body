@@ -23,7 +23,7 @@ Parse request bodies with async / await
 
 ## How to install
 
-  npm i -S yeps-body
+    npm i -S yeps-body
   
 ## How to use
 
@@ -32,10 +32,8 @@ Parse request bodies with async / await
     const app = new App();
     
     app.then(async ctx => {
-        
         ctx.res.statusCode = 200;
-        ctx.res.end(JSON.stringify(await parse(ctx.req)));
-    
+        ctx.res.end(JSON.stringify(await parse.any(ctx.req)));
     });
     
 ## Text
@@ -60,12 +58,11 @@ See [queryString](https://github.com/ljharb/qs) parameters.
             
             
 #### [YEPS documentation](http://yeps.info/)
-    
-## Links
+
+
+#### Dependencies:
 
 * [qs](https://github.com/ljharb/qs) - A querystring parsing and stringifying library with some added security
 * [inflation](https://github.com/stream-utils/inflation) - Automatically unzip an HTTP stream
 * [raw-body](https://github.com/stream-utils/raw-body) -  Parsing request bodies
 * [type-is](https://github.com/jshttp/type-is) - Infer the content-type of a request
-     
-     
