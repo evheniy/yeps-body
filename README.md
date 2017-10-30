@@ -31,7 +31,7 @@ Parse request bodies with async / await
     const parse = require('yeps-body');
     const app = new App();
     
-    app.then(async ctx => {
+    app.then(async (ctx) => {
         ctx.res.statusCode = 200;
         ctx.res.end(JSON.stringify(await parse.any(ctx.req)));
     });
